@@ -145,3 +145,24 @@ form label span {
 
 
 /* breadcrumbs */
+
+
+.blog-layout{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog p{
+  font-size: 1.3rem;
+}
+.blog h1{
+  font-size: 1.4rem;
+  color: #bc4123;
+  text-decoration: underline;
+}
+
+.blog div{
+  border: 1px solid black;
+  margin: 0 0 1.5em 0;
+}

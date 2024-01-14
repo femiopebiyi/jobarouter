@@ -1,10 +1,20 @@
-export default function Blog() {
-  return (
-    <div className="blog">
-      <h2>Blog</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui provident consequuntur vel omnis quisquam rem harum, maxime expedita, ullam ut dolore! Distinctio eos minima voluptatum totam id hic! Sapiente debitis quia illum officia obcaecati provident nulla odio molestiae suscipit quasi.</p>
+import { useLoaderData, Link } from "react-router-dom"
+import { posts } from "../blog"
+
+
+export default function Blog(){
+
+    return <div className="blog">
+        {posts.map((post)=>{
+    return <div key={post.id}>
+                <h1>{post.title}</h1>
+                <br/>
+                <h2>{post.body}</h2>
+                <p>Author: {post.author}</p>
+            </div>
+        })}
     </div>
-  )
 }
+
+
+
