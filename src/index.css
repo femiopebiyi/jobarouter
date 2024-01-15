@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
   --primary: #bc4123;
@@ -57,7 +57,7 @@ main {
   margin: 40px auto;
 }
 
-.root-layout{
+.root-layout {
   border: 1px solid red;
 }
 
@@ -118,7 +118,7 @@ form label span {
 }
 
 /* careers list */
-.careers>a {
+.careers > a {
   display: block;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -127,7 +127,7 @@ form label span {
   text-decoration: none;
 }
 
-.careers>a:hover p {
+.careers > a:hover p {
   color: var(--primary);
 }
 
@@ -135,34 +135,37 @@ form label span {
   margin: 0;
 }
 
-.careers>a p:last-child {
+.careers > a p:last-child {
   font-size: 0.8em;
   color: #bbb;
 }
 
-
 /* careers details */
-
+.career-details {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
 
 /* breadcrumbs */
 
-
-.blog-layout{
+.blog-layout {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.blog p{
+.blog p {
   font-size: 1.3rem;
 }
-.blog h1{
+.blog h1 {
   font-size: 1.4rem;
   color: #bc4123;
   text-decoration: underline;
 }
 
-.blog div{
+.blog div {
   border: 1px solid black;
   margin: 0 0 1.5em 0;
 }
